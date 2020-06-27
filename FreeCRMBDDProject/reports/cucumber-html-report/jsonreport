@@ -1,0 +1,108 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8336392400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksTestSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 133800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginTestSteps.setup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Free CRM Login Test Scenario",
+        "description": "",
+        "id": "free-crm-login-feature;free-crm-login-test-scenario",
+        "after": [
+          {
+            "result": {
+              "duration": 287707200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksTestSteps.closebrowser()"
+            }
+          },
+          {
+            "result": {
+              "duration": 83100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginTestSteps.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 114850000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on free crm login page",
+            "match": {
+              "location": "LoginStepDefinition.user_is_on_free_crm_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 101812400,
+              "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.click(Unknown Source)\r\n\tat com.pages.LoginPage.submitButton(LoginPage.java:22)\r\n\tat com.stepdefinition.LoginStepDefinition.user_clicks_on_login_button(LoginStepDefinition.java:46)\r\n\tat ✽.Then User clicks on login button(src/test/resources/Features/login.feature:8)\r\n",
+              "status": "failed"
+            },
+            "comments": [
+              {
+                "line": 6,
+                "value": "#When Title of the page is Free CRM"
+              },
+              {
+                "line": 7,
+                "value": "#Then User enters \"meera.anand69@gmail.com\" and \"Dhanush123\""
+              }
+            ],
+            "line": 8,
+            "name": "User clicks on login button",
+            "match": {
+              "location": "LoginStepDefinition.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User is on home page",
+            "match": {
+              "location": "LoginStepDefinition.user_is_on_home_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Free CRM Login Feature",
+    "description": "",
+    "id": "free-crm-login-feature",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/login.feature"
+  }
+]
